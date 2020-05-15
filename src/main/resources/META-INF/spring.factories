@@ -1,0 +1,12 @@
+# Initializers
+org.springframework.context.ApplicationContextInitializer=\
+top.chenjipdc.testspring.init.TestApplicationContextInitializer
+
+
+# Environment Post Processors
+org.springframework.boot.env.EnvironmentPostProcessor=\
+top.chenjipdc.testspring.env.TestEnvironmentPostProcessor
+
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+top.chenjipdc.testautoconfiguration.TestAutoConfiguration
