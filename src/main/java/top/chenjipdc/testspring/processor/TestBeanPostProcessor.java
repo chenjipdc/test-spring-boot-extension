@@ -16,7 +16,7 @@ public class TestBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         if (bean instanceof TestBean){
-            TestLogger.log("BeanPostProcessor => bean创建完初始化前，可以搞事情");
+            TestLogger.log("BeanPostProcessor => bean BeforeInitialization，可以搞事情");
         }
         return bean;
     }
@@ -24,7 +24,7 @@ public class TestBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         if (bean instanceof TestBean){
-            TestLogger.log("BeanPostProcessor => bean实例化完初始化后，也可以搞事情");
+            TestLogger.log("BeanPostProcessor => bean AfterInitialization，也可以搞事情");
         }
         return bean;
     }
